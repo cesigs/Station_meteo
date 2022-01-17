@@ -1,4 +1,4 @@
-# Station meteo embarqué
+# Station météo embarqué
 
 Projet inventé proposant un prototype de station météo embarquée destinée à équiper des navires. 
 
