@@ -1,0 +1,24 @@
+typedef struct lumin {      // creation de la structure
+  bool LUMIN = 1;
+  int LUMIN_LOW = 255;
+  int LUMIN_HIGH = 768;
+  int LUMIN_ACTUAL;         // luminosite actuel
+} lumin;                    // nom de la structure
+
+lumin lumino;               // change le nom de lumin en lumino
+
+
+void lum(lumin* lumino){                      // creation de la boucle avec pointeur lumin
+    lumino->LUMIN_ACTUAL = analogRead(A0);    // donne a lumino la valeur de A0 en utilisant le pointeur
+    Serial.print("Brightness = ");
+    Serial.print(lumino->LUMIN_ACTUAL);
+    Serial.println(" lumen");
+}
+
+
+
+void chang_lumin(lumin* lumino) {       // pour le mode configuration, on change les valeurs de
+  lumino->LUMIN = false;                // LUMIN
+  lumino->LUMIN_HIGH = 1023;            // LUMIN_HIGH
+
+}
