@@ -1,4 +1,4 @@
-# Station météo embarqué
+# Station météo embarqué (C++/Arduino)
 
 Projet inventé proposant un prototype de station météo embarquée destinée à équiper des navires. 
 
